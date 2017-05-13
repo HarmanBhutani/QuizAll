@@ -1,0 +1,44 @@
+
+
+
+<br>
+<div ng-repeat= "x in $ctrl.dat" class="visible-lg"> <div ng-if="$ctrl.qust_index === $index"> {{$index+1}}. {{x[4]}} <br> <br> 
+<h3>Hello {{$ctrl.name}}</h3><div id="options1" >
+<input class="options" type="radio" ng-model="$ctrl.x"  value="{{x[0]}}" name=""> {{x[0]}}<br>
+<input class="options" type="radio" ng-model="$ctrl.x"  value="{{x[1]}}" name=""> {{x[1]}}<br>
+<input class="options" type="radio" ng-model="$ctrl.x"  value="{{x[2]}}" name=""> {{x[2]}}<br>
+<input class="options" type="radio" ng-model="$ctrl.x"  value="{{x[3]}}" name=""> {{x[3]}}<br><br>
+<button ng-click="$ctrl.back();"> back</button>
+<button ng-click="$ctrl.next();"> Next</button></div>
+
+</div>
+</div>
+
+<div ng-repeat= "x in $ctrl.dat" class="visible-sm"> <div class="line_height" ng-if="$ctrl.qust_index === $index"> {{$index+1}}. {{x[4]}} <br> <br> 
+<h3>Hello {{$ctrl.name}}</h3><div id="options1" class="col-sm-offset-3" >
+<input class="options" type="radio" ng-model="$ctrl.x"  value="{{x[0]}}" name=""> {{x[0]}}<br>
+<input class="options" type="radio" ng-model="$ctrl.x"  value="{{x[1]}}" name=""> {{x[1]}}<br>
+<input class="options" type="radio" ng-model="$ctrl.x"  value="{{x[2]}}" name=""> {{x[2]}}<br>
+<input class="options" type="radio" ng-model="$ctrl.x"  value="{{x[3]}}" name=""> {{x[3]}}<br><br>
+<button ng-click="$ctrl.back();"> back</button>
+<button ng-click="$ctrl.next();"> Next</button></div>
+</div>
+</div>
+
+
+
+<div ng-repeat= "x in $ctrl.dat" class="visible-xs"> <div class="line_height" ng-if="$ctrl.qust_index === $index"> {{$index+1}}. {{x[4]}} <br> <br> 
+<h3>Hello {{$ctrl.name}}</h3><div id="options1" class="col-xs-offset-3" >
+<input class="options" type="radio" ng-model="$ctrl.x"  value="{{x[0]}}" name=""> {{x[0]}}<br>
+<input class="options" type="radio" ng-model="$ctrl.x"  value="{{x[1]}}" name=""> {{x[1]}}<br>
+<input class="options" type="radio" ng-model="$ctrl.x"  value="{{x[2]}}" name=""> {{x[2]}}<br>
+<input class="options" type="radio" ng-model="$ctrl.x"  value="{{x[3]}}" name=""> {{x[3]}}<br><br>
+<button ng-click="$ctrl.back();"> back</button>
+<button ng-click="$ctrl.next();"> Next</button></div>
+</div>
+</div>
+<div ng-if="$ctrl.qust_index === $ctrl.total_quest" id="result"><h2>Well done {{$ctrl.name}} on completing the quiz!</h2>
+<div>You scored: {{$ctrl.counter}}%</div>
+<div ng-if= "$ctrl.qust_index === $ctrl.total_quest" id="quote">{{$ctrl.abc}}
+<div>-{{$ctrl.author}}</div></div>
+</div>
